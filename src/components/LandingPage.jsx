@@ -129,7 +129,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-semibold text-white">Towing Services</h1>
+        <h1 className="text-2xl font-semibold text-white">Okoa Gari</h1>
         <div className="space-x-6">
           <>
             {isAuthenticated() ? (
@@ -223,8 +223,12 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-6 text-center text-gray-400">
           <p>&copy; 2024 Towing Services. All rights reserved.</p>
           <div className="mt-4 space-x-6">
-            <a href="mailto:contact@towingservices.com" className="text-gray-200 hover:text-white" aria-label="Email us">Email Us</a>
-            <a href="tel:+1234567890" className="text-gray-200 hover:text-white" aria-label="Call us">Call Us</a>
+            <a href="mailto:contact@towingservices.com" className="text-gray-200 hover:text-white" aria-label="Email us">Email Us
+            : okoagari@gmail.com
+            </a>
+            <a href="tel:0700000000" className="text-gray-200 hover:text-white" aria-label="Call us">Call Us
+              : 070000000
+            </a>
           </div>
           <div className="mt-4 space-x-6 flex justify-center">
             <a href="https://facebook.com/towingservices" className="text-gray-200 hover:text-white" aria-label="Facebook">

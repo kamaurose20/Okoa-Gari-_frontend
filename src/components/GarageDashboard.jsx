@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaTachometerAlt, FaCreditCard, FaRegClock, FaBell, FaInbox, FaUserAlt, FaArrowLeft } from 'react-icons/fa';
-import { Line } from 'react-chartjs-2';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Modal, Button, Form } from "react-bootstrap";  import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend } from 'chart.js';
+// import { Modal, Button, Form } from "react-bootstrap";  import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import BASE_URL from '../UTILS';
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend);
+// ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend);
 
 const GarageDashboard = () => {
   const navigate = useNavigate();

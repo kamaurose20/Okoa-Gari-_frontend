@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaChartLine, FaWrench, FaCreditCard, FaComments, FaClipboardList, FaRegUser, FaUsers, FaArrowLeft, FaSignOutAlt } from 'react-icons/fa';
-import { Line } from 'react-chartjs-2';
 import BASE_URL from '../UTILS';
-import 'chart.js/auto';
 
 const AdminDashboard = () => {
   const [selectedSection, setSelectedSection] = useState('manageMechanics');
