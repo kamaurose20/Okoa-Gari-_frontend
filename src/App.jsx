@@ -6,9 +6,9 @@ import AdminDashboard from './components/AdminDashboard';
 import GarageDashboard from './components/GarageDashboard';
 // import SuperAdminDashboard from './components/SuperAdmin'; // Correct import here
 import ErrorBoundary from './components/ErrorBoundary'; // Error Boundary
-// import SignUpPage from './components/SignUpPage';
+import SignUpPage from './components/SignUpPage';
 import LoginPage from './components/LoginPage';
-// import './index.css'; // Tailwind CSS
+import './index.css'; // Tailwind CSS
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/" element={<LandingPage />} />
 
             {/* Sign up page */}
-            {/* <Route path="/signup" element={<SignUpPage />} /> */}
+             <Route path="/signup" element={<SignUpPage />} /> 
 
             {/* Login page */}
             <Route path="/login" element={<LoginPage />} /> Fixed the prop to element
