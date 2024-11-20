@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import UserDashboard from './components/UserDashboard';
-// import AdminDashboard from './components/AdminDashboard';
+import AdminDashboard from './components/AdminDashboard';
 import GarageDashboard from './components/GarageDashboard';
 // import SuperAdminDashboard from './components/SuperAdmin'; // Correct import here
 import ErrorBoundary from './components/ErrorBoundary'; // Error Boundary
@@ -29,7 +29,7 @@ const App = () => {
             <Route path="/user-dashboard" element={<UserDashboard />} />
 
             {/* Admin Dashboard Route */}
-            {/* <Route path="/admin-dashboard" element={<AdminDashboard />} /> */}
+             <Route path="/admin-dashboard" element={<AdminDashboard />} /> 
 
             {/* Garage Dashboard Route */}
             <Route path="/garage-dashboard" element={<GarageDashboard />} />
