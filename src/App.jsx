@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import LandingPage from './components/LandingPage';
+// import UserDashboard from './components/UserDashboard';
+// import AdminDashboard from './components/AdminDashboard';
+// import GarageDashboard from './components/GarageDashboard';
+// import SuperAdminDashboard from './components/SuperAdmin'; // Correct import here
+import ErrorBoundary from './components/ErrorBoundary'; // Error Boundary
+// import SignUpPage from './components/SignUpPage';
+// import LoginPage from './components/LoginPage';
+// import './index.css'; // Tailwind CSS
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <ErrorBoundary>
+      <Router>
+        <div className="min-h-screen bg-gray-100">
+          <Routes>
+            {/* Landing Page Route */}
+            {/* <Route path="/" element={<LandingPage />} /> */}
 
-export default App
+            {/* Sign up page */}
+            {/* <Route path="/signup" element={<SignUpPage />} /> */}
+
+            {/* Login page */}
+            {/* <Route path="/login" element={<LoginPage />} /> Fixed the prop to element */}
+
+            {/* User Dashboard Route */}
+            {/* <Route path="/user-dashboard" element={<UserDashboard />} /> */}
+
+            {/* Admin Dashboard Route */}
+            {/* <Route path="/admin-dashboard" element={<AdminDashboard />} /> */}
+
+            {/* Mechanic Dashboard Route */}
+            {/* <Route path="/garage-dashboard" element={<GarageDashboard />} /> */}
+
+            {/* Super Admin Dashboard Route */}
+            {/* <Route path="/super-admin-dashboard" element={<SuperAdminDashboard />} /> Super Admin Route */}
+
+            {/* Optional: Catch-all for 404 errors */}
+            <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+          </Routes>
+        </div>
+      </Router>
+    </ErrorBoundary>
+  );
+};
+
+export default App;
